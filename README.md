@@ -1,3 +1,6 @@
 # Anonymous Message Board
 
 This is the boilerplate for the Anonymous Message Board project. Instructions for completing your project can be found at https://www.freecodecamp.org/learn/information-security/information-security-projects/anonymous-message-board
+
+Explication in Spanish:
+El código se basa en la explicación de Landon Schlangen y la de LeonTasinger-GitHub-PC. La solución simple de Landon no se ajusta a los requisitos de CodeCamp y no pasa la prueba aunque localmente las pruebas realizadas pasan. La explicación es que las pruebas solicitadas se actualizan de tanto en tanto. Esta versión usa los mismos paquetes y resuelve algunos de los problemas reportados. No requiere la modificación de la vista como lo indica su video, y pasa la prueba. Es posible utilizar el servidor local como entrada y repositorio diferenciado sin requerir de un servidor externo donde hospedarlo. Si se realiza y se siguen las instrucciones del video, hay que editar las variables de env directamente en la plataforma y adicionar la ip para que se conecte correctamente a la base de datos. Aun con todo esto y funcionando en el local es posible que la solución no reporte que pasen las pruebas. Pasan en la máquina local, pero no en el servidor. Posiblemente se trate de paquetes y configuraciones adicionales que no dependen de la codificación clonada.
