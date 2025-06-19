@@ -7,6 +7,8 @@ const cors        = require('cors');
 const apiRoutes         = require('./routes/api.js');
 const fccTestingRoutes  = require('./routes/fcctesting.js');
 const runner            = require('./test-runner');
+const helmet            = require('helmet');
+require('./dbcon');
 
 const app = express();
 
@@ -16,6 +18,13 @@ app.use(cors({origin: '*'})); //For FCC testing purposes only
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(helmet.frameguard());
+app.use(
+  helmet({
+    referrerPolicy: { policy: 'same-origin' },
+  })
+);
 
 //Sample front-end
 app.route('/b/:board/')
